@@ -1,0 +1,10 @@
+Solution:
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+a=list(input())
+import itertools
+b=[]
+for (key,group) in itertools.groupby(a):
+    c="({}, {})".format(len(list(group)),key)
+    b.append(c)
+print(" ".join(b))
