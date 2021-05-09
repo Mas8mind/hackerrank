@@ -1,0 +1,16 @@
+Solution:
+
+T=int(input())
+for i in range(T):
+    a='True'
+    N=int(input())
+    A=set(map(int,input().split()))
+    M=int(input())
+    B=set(map(int,input().split()))
+    for i in A:
+        if i in B:
+            pass
+        else:
+            a="False"
+            break
+    print(a)    
