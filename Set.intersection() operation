@@ -1,0 +1,8 @@
+Solution:
+
+N=int(input())
+A=set(map(int,input().split()))
+M=int(input())
+B=set(map(int,input().split()))
+A.intersection_update(B)
+print(len(A))
