@@ -1,0 +1,9 @@
+Solution:
+
+import cmath
+N=complex(input())
+x=int(N.real)
+y=int(N.imag)
+r=cmath.sqrt(x**2+y**2)
+print(r.real)
+print(cmath.phase(N))
