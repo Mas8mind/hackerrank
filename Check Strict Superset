@@ -1,0 +1,13 @@
+Solution:
+
+A=set(map(int,input().split()))
+N=int(input())
+count=0
+for i in range(N):
+    B=set(map(int,input().split()))
+    if len(B.difference(A))==0 and len(A)!=len(B):
+        count+=1
+if count==N:
+    print('True')
+else:
+    print('False')
