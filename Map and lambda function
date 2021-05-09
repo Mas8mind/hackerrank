@@ -1,0 +1,21 @@
+solution:
+
+cube = lambda x:x**3 
+
+def fibonacci(n):
+    a=[]
+    if n>=1:
+        n1=0
+        n2=1
+        for i in range(n):
+            n3=n1+n2
+            a.append(n1)
+            n1=n2
+            n2=n3
+        return a
+    else:
+        return a
+
+if __name__ == '__main__':
+    n = int(input())
+    print(list(map(cube, fibonacci(n))))
